@@ -1,0 +1,33 @@
+@use "../util/" as u;
+
+.container {
+    max-width: 69.375rem ;
+    margin: 0 auto;
+
+    &--pall {
+        padding-inline: 1.5rem;
+        padding-block: 4.357rem;
+        
+        @include u.breakpoint-up(large) {
+        padding-inline: 1.5rem;
+        padding-block: 6rem;
+        }
+    }
+    
+}
+
+.flex {
+    display: flex;
+
+    &-js-sb {
+        justify-content: space-between;
+    }
+
+    &-js-c {
+        justify-content: center;
+    }
+
+    &-ai-c {
+        align-items: center;
+    }
+}
